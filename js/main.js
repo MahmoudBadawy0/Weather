@@ -90,7 +90,7 @@ function displayFuture(result) {
   for (let i = 1; i < result.forecast.forecastday.length; i++) {
     temp += `
           <div class="col-md-4 p-0  ">
-            <div class="weather-card weather-spc">
+            <div class="weather-card ${i == 1 ? "weather-spc" : ""} ">
               <div class="weather-header  p-2 d-flex justify-content-center" id="">
                 <p class="m-0 ms-2  ">${
                   dataToString(result.forecast.forecastday[i].date).dayName
