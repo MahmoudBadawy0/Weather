@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather</title>
+
+  <link rel="shortcut icon" href="img/logo@2x.png" type="image/x-icon">
+  <link rel="stylesheet" href="CSS/all.min.css" />
+  <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+  <link rel="stylesheet" href="CSS/main.css" />
+</head>
+
+<body>
+  <main>
+    <nav class="navbar navbar-expand-lg bg-transparent py-5">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="img/logo@2x.png" alt="logo" class="logo me-3" />
+
+          <div class="d-flex flex-column">
+            <h1 class="text-white m-0 fs-6">Weather</h1>
+            <small class="logo-sec">tagline goes here</small>
+          </div>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="nav-i fa-solid fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link my-2 act" aria-current="page" href="#">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link my-2" aria-current="page" href="#">News</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link my-2" aria-current="page" href="#">Live cameras</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link my-2" aria-current="page" href="#">Photo</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link my-2" aria-current="page" href="#">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div class="container">
+        <form class="find-location">
+          <input type="text" placeholder="Find your location..." class="search" id="search" />
+          <input type="button" value="Find" id="search-btn" class="search-btn" />
+        </form>
+      </div>
+    </div>
+
+    <div class="weather">
+      <div class="container position-relative">
+        <div id="row" class="row component"></div>
+
+        <div id="loading" class="loading d-none align-items-center justify-content-center">
+          <span class="loader"></span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <form action="#" class="form-sub">
+            <input class="subs" type="text" placeholder="Enter your email to subscribe..." />
+            <input class="btn-subs" type="submit" value="Subscribe" />
+          </form>
+        </div>
+
+        <div class="col-md-3 offset-md-1">
+          <div class="social d-flex">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-google"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
